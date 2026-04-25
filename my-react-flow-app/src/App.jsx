@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import { ReactFlow, Background, Controls, applyEdgeChanges, applyNodeChanges, addEdge } from '@xyflow/react';
+import { ReactFlow, Background, Controls, applyEdgeChanges, applyNodeChanges, addEdge, MiniMap, Panel } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
  
 //noeuds initiaux utilisés dans <ReactFlow nodes={initialNodes}>
@@ -54,6 +54,8 @@ export default function App() {
       onEdgesChange={onEdgesChange}
       onConnect={onConnect}
       > 
+        <Panel position="center-right">center-right</Panel>
+        <MiniMap nodeStrokeWidth={3} zoomable pannable />
         <Background />
         <Controls />
       </ReactFlow>
