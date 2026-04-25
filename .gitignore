@@ -1,0 +1,4 @@
+
+#ignore les fichiers générés par npm install
+package-lock.json
+node_modules/
